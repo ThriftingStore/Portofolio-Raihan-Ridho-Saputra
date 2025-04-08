@@ -144,6 +144,18 @@
   <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2025 Website Portofolio. Semua hak dilindungi.</p>
   </footer>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+  
+      hamburger.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+      });
+    });
+  </script>
+  
 
 </body>
 </html>
