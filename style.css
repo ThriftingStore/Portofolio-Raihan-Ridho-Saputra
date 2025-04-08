@@ -354,6 +354,7 @@ section {
 #kontak .btn-primary:hover {
   background-color: #0096c7;
 }
+/* === Responsive untuk Tablet dan HP === */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -387,8 +388,6 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    position: relative; /* agar nav-links nempel ke navbar */
-    z-index: 999;
   }
 
   .navbar > * {
@@ -449,13 +448,18 @@ section {
   section {
     padding: 3rem 1.5rem;
   }
-}
 
+  body {
+    padding-top: 100px; /* jika navbar lebih tinggi di mobile */
+  }
+}
 
 @media (max-width: 576px) {
   body {
     font-size: 16px;
+    padding-top: 100px; /* jaga jarak navbar di mobile */
   }
+
   .hamburger {
     display: flex;
     order: 3;
@@ -488,8 +492,6 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    position: relative; /* agar nav-links nempel ke navbar */
-    z-index: 999;
   }
 
   .navbar > * {
