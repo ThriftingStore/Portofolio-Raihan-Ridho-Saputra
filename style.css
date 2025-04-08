@@ -31,7 +31,7 @@ body {
   color: white;
   min-height: 100vh;
   font-size: 18px;
-  padding-top: 90px; /* Tambahan agar konten tidak tertutup navbar */
+  padding-top: 90px;
 }
 
 /* Tambahan CSS untuk hamburger menu */
@@ -354,21 +354,28 @@ section {
 #kontak .btn-primary:hover {
   background-color: #0096c7;
 }
-
-/* === Responsive === */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
+    order: 3;
+    margin-left: auto;
+    z-index: 1001;
   }
 
   .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    min-width: 180px;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 12px;
     display: none;
     flex-direction: column;
     gap: 15px;
-    width: 100%;
-    background-color: #111;
-    padding: 20px 10px;
-    border-radius: 12px;
+    z-index: 1000;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
   }
 
   .nav-links.active {
@@ -376,10 +383,25 @@ section {
   }
 
   .navbar {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px 30px;
-    align-items: flex-start;
+    position: relative; /* agar nav-links nempel ke navbar */
+    z-index: 999;
+  }
+
+  .navbar > * {
+    margin-bottom: 0;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .search-box {
+    order: 2;
+    margin-left: auto;
   }
 
   .welcome-section {
@@ -429,9 +451,54 @@ section {
   }
 }
 
+
 @media (max-width: 576px) {
   body {
     font-size: 16px;
+  }
+  .hamburger {
+    display: flex;
+    order: 3;
+    margin-left: auto;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    min-width: 100px;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: relative; /* agar nav-links nempel ke navbar */
+    z-index: 999;
+  }
+
+  .navbar > * {
+    margin-bottom: 0;
+  }
+
+  .search-box {
+    order: 2;
+    margin-left: auto;
   }
 
   .logo {
@@ -466,4 +533,3 @@ section {
 section[id] {
   scroll-margin-top: 120px;
 }
-
