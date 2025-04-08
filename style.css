@@ -16,7 +16,7 @@ html {
 }
 
 footer {
-  background-color:  #111;
+  background-color: #111;
   color: white;
   text-align: center;
   padding: 30px 0;
@@ -169,7 +169,7 @@ body {
   color: #00bfff;
 }
 
-/* === Section Base Style for Uniformity === */
+/* === Section Gaya Basis untuk Keseragaman */
 section {
   padding: 4rem 3rem;
   margin: 0 auto 60px;
@@ -354,6 +354,7 @@ section {
 #kontak .btn-primary:hover {
   background-color: #0096c7;
 }
+
 /* === Responsive untuk Tablet dan HP === */
 @media (max-width: 768px) {
   .hamburger {
@@ -531,7 +532,7 @@ section {
   }
 }
 
-/* === Scroll Margin Fix to Avoid Navbar Overlap === */
+/* === Perbaikan Margin Gulir untuk Menghindari Tumpang Tindih Navbar === */
 section[id] {
   scroll-margin-top: 120px;
 }
