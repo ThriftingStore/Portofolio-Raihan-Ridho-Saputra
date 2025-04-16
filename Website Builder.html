@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website Builder</title>
+  <link rel="stylesheet" href="artikel dan produk.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portofolio</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#welcome">Home</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+        <li><a href="index.html#produk">Product</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#sertifikat">Sertifikat</a></li>
+      </ul>
+      <div class="search-box">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+    </nav>
+  </header>
+
+  <main class="product-detail">
+    <section class="product-content">
+      <h2>Website Builder</h2>
+      <p><strong>Diterbitkan:</strong> 9 April 2025</p>
+      <img src="img/product2.jpeg" alt="Website Builder" class="produk-img-full"/>
+      <p>Website Builder memungkinkan siapa saja membangun situs web profesional tanpa perlu menulis satu baris kode pun. Tools seperti Wix, Squarespace, dan Webflow menawarkan template menarik dan editor visual intuitif.</p>
+      <h3>1. Antarmuka User-Friendly</h3>
+      <p>Drag-and-drop builder sangat mudah digunakan dan cocok untuk pemula maupun bisnis kecil yang ingin membangun online presence secara cepat.</p>
+      <h3>2. Fitur Lengkap</h3>
+      <p>Fitur seperti SEO bawaan, e-commerce, integrasi sosial, dan hosting membuat Website Builder menjadi solusi all-in-one yang efisien.</p>
+      <h3>3. Keterbatasan Kustomisasi</h3>
+      <p>Meskipun cocok untuk kebutuhan umum, Website Builder memiliki batasan bagi pengguna lanjutan yang menginginkan kontrol penuh terhadap kode.</p>
+      <p><strong>Kesimpulan:</strong> Website Builder sangat cocok untuk proyek cepat dan sederhana. Namun, bagi pengembang tingkat lanjut, solusi kustom masih lebih fleksibel.</p>
+      <a href="index.html#produk" class="btn-kembali">← Kembali ke Blog</a>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Website Portofolio. Semua hak dilindungi.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

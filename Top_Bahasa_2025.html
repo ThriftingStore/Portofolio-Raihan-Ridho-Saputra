@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Bahasa 2025</title>
+  <link rel="stylesheet" href="artikel dan produk.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Header & Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portofolio</div>
+
+      <!-- Hamburger menu untuk mobile -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#welcome">Home</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+        <li><a href="index.html#produk">Product</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#sertifikat">Sertifikat</a></li>
+      </ul>
+
+      <div class="search-box">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+    </nav>
+  </header>
+
+  <!-- Artikel Utama -->
+  <main class="artikel-detail">
+    <section class="artikel-content">
+      <h2>Top Bahasa Pemrograman 2025</h2>
+      <p><strong>Diterbitkan:</strong> 9 April 2025</p>
+      <img src="img/artikel3.jpeg" alt="Top Bahasa 2025" class="artikel-img-full"/>
+
+      <p>
+        Tahun 2025 membawa berbagai inovasi baru dalam dunia pemrograman. Seiring berkembangnya teknologi, kebutuhan akan bahasa pemrograman yang efisien, aman, dan mudah dipelajari semakin meningkat. Berikut adalah beberapa bahasa yang paling menonjol di tahun ini.
+      </p>
+
+      <h3>1. Python</h3>
+      <p>
+        Tetap berada di puncak, Python unggul karena kesederhanaannya dan dukungan luas untuk machine learning, data science, dan web development. Popularitasnya terus tumbuh di kalangan pemula hingga profesional.
+      </p>
+
+      <h3>2. JavaScript</h3>
+      <p>
+        Masih menjadi raja di dunia web. Framework seperti React, Vue, dan Svelte menjadikan JavaScript sangat fleksibel, baik untuk front-end maupun full-stack development.
+      </p>
+
+      <h3>3. Rust</h3>
+      <p>
+        Rust semakin populer karena keamanannya dan kinerja tinggi. Banyak perusahaan besar mulai mengadopsi Rust untuk proyek-proyek sistem dan backend.
+      </p>
+
+      <h3>4. Go</h3>
+      <p>
+        Dikembangkan oleh Google, Go terkenal dengan kecepatan kompilasi dan kemudahannya dalam membuat aplikasi backend yang scalable. Banyak digunakan dalam pengembangan cloud-native apps.
+      </p>
+
+      <h3>5. Kotlin & Swift</h3>
+      <p>
+        Kotlin tetap menjadi pilihan utama untuk Android, sementara Swift terus mendominasi iOS development. Keduanya berkembang seiring dengan ekosistem mobile yang terus tumbuh.
+      </p>
+
+      <p><strong>Kesimpulan:</strong> Setiap bahasa memiliki kekuatan dan ekosistemnya masing-masing. Pilihlah berdasarkan kebutuhan proyek dan tujuan pembelajaranmu. Tahun 2025 adalah tahun yang ideal untuk menjelajahi bahasa baru!</p>
+
+      <a href="index.html#blog" class="btn-kembali">← Kembali ke Blog</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Website Portofolio. Semua hak dilindungi.</p>
+  </footer>
+
+  <!-- Script untuk toggle hamburger menu -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Programming</title>
+  <link rel="stylesheet" href="artikel dan produk.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Header & Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portofolio</div>
+
+      <!-- Hamburger menu untuk mobile -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#welcome">Home</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+        <li><a href="index.html#produk">Product</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#sertifikat">Sertifikat</a></li>
+      </ul>
+      
+      <div class="search-box">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+    </nav>
+  </header>
+
+  <!-- Artikel Utama -->
+  <main class="artikel-detail">
+    <section class="artikel-content">
+      <h2>Peran AI dalam Pemrograman</h2>
+      <p><strong>Diterbitkan:</strong> 9 April 2025</p>
+      <img src="img/artikel1.jpeg" alt="AI Programming" class="artikel-img-full"/>
+
+      <p>
+        Kecerdasan Buatan (Artificial Intelligence atau AI) telah merevolusi berbagai aspek dunia teknologi, termasuk dunia pemrograman. Dengan hadirnya AI, proses penulisan dan debugging kode menjadi lebih cepat, efisien, dan cerdas.
+      </p>
+
+      <h3>1. Asisten Kode Otomatis</h3>
+      <p>
+        Berbagai platform seperti GitHub Copilot atau Tabnine memanfaatkan AI untuk memberikan saran kode secara real-time. Ini membantu developer menyelesaikan pekerjaan dengan lebih sedikit kesalahan sintaksis dan meningkatkan produktivitas.
+      </p>
+
+      <h3>2. Pengujian dan Debugging Lebih Cepat</h3>
+      <p>
+        AI mampu menganalisis ribuan baris kode dan mendeteksi bug atau kerentanan secara otomatis. Ini mempercepat proses QA dan meminimalkan risiko kesalahan dalam produksi.
+      </p>
+
+      <h3>3. Generatif Coding</h3>
+      <p>
+        AI kini juga dapat menghasilkan kode dari instruksi teks biasa. Ini membuka pintu bagi orang non-programmer untuk berkontribusi dalam pengembangan aplikasi melalui sistem no-code/low-code.
+      </p>
+
+      <h3>4. Tantangan dan Etika</h3>
+      <p>
+        Meski AI membantu, penggunaannya menimbulkan pertanyaan etis seperti plagiarisme kode, kebergantungan terhadap AI, dan akurasi hasil. Maka penting bagi developer untuk tetap melakukan validasi terhadap kode yang dihasilkan AI.
+      </p>
+
+      <p><strong>Kesimpulan:</strong> AI bukan pengganti programmer, melainkan alat bantu yang mempercepat dan menyederhanakan proses coding. Pemahaman terhadap AI menjadi keterampilan penting di era pemrograman modern.</p>
+
+      <a href="index.html#blog" class="btn-kembali">← Kembali ke Blog</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Website Portofolio. Semua hak dilindungi.</p>
+  </footer>
+
+  <!-- Script untuk toggle hamburger menu -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

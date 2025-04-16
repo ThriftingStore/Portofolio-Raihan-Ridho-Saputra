@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portofolio</div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#welcome">Home</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#produk">Product</a></li>
+        <li><a href="#tentang">About me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#sertifikat">Sertifikat</a></li>
+      </ul>
+
+      <div class="search-box">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+    </nav>
+  </header>
+
+  <!-- Welcome Section -->
+  <main class="welcome-section" id="welcome">
+    <div class="profile-img">
+      <img src="img/profil.jpeg" alt="Programmer Icon">
+    </div>
+    <div class="welcome-text">
+      <h2>Welcome</h2>
+      <h3>I'm Raihan Ridho Saputra!</h3>
+      <p>I'm a passionate programmer specializing in web development.</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/rhnrdsptr__" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/6281378579364?text%20" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://github.com/ThriftingStore" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://x.com/RaihanRidh82865?t=DwOQ_irwcWfkG_3LGUaKwA&s=09" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      
+    </div>
+  </main>
+
+  <!-- Tentang Saya -->
+  <section id="tentang">
+    <h3>About Me</h3>
+    <p>
+      Halo! Saya adalah seorang pengembang web dengan minat besar dalam menciptakan pengalaman digital yang menarik, interaktif, dan fungsional. Dengan latar belakang dalam desain antarmuka pengguna (UI) dan pengembangan front-end, saya selalu berusaha menggabungkan estetika visual dengan performa yang optimal.  
+    </p>
+    <p>
+      Saya memulai perjalanan di dunia teknologi sejak memasuki dunia perkuliahan dan sejak itu terus mengasah keterampilan saya di berbagai proyek, mulai dari situs web portofolio pribadi hingga aplikasi web kompleks berskala besar. Keahlian saya mencakup HTML, CSS, JavaScript, dan berbagai framework seperti React dan Vue, serta pengalaman dalam integrasi API dan optimasi performa web.
+    </p>
+    <p>
+      Bagi saya, coding bukan hanya sekadar menulis baris demi baris kode, tapi juga tentang memecahkan masalah, berpikir kreatif, dan menciptakan solusi digital yang memberikan nilai nyata bagi pengguna. Saya juga percaya pada pentingnya desain responsif agar website dapat diakses dengan baik di berbagai perangkat.
+    </p>
+    <p>
+      Di luar dunia coding, saya senang mengeksplorasi tren teknologi terbaru, mengikuti komunitas developer, dan sesekali berbagi ilmu lewat blog atau workshop. Saat ini, saya terbuka untuk peluang kolaborasi, freelance, atau kerja penuh waktu di bidang pengembangan web.
+    </p>
+  </section>
+  
+
+  <!-- Educatiom  -->
+  <section class="container my-5" id="education">
+    <h3 >Education</h3>
+  
+    <div class="mb-4">
+      <h5>SMA Negeri 2 Lintau Buo</h5>
+      <p class="mb-1"><strong>Jurusan:</strong> Ilmu Pengetahuan Sosial (IPS)</p>
+      <p class="mb-1"><strong>Tahun:</strong> 2020 - 2023</p>
+      <p class="mb-0">
+        Selama belajar di SMA Negeri 2 Lintau Buo, saya mendalami berbagai mata pelajaran sosial seperti Ekonomi, Sosiologi, Geografi, dan Sejarah. Di samping pelajaran akademik, saya juga aktif dalam kegiatan organisasi sekolah serta mulai mengenal dunia teknologi dan desain secara otodidak.
+      </p>
+    </div>    
+  
+    <div class="mb-4">
+      <h5>Cardova </h5>
+      <p class="mb-1"><strong>Kursus:</strong> Front-End Web Developer Expert</p>
+      <p class="mb-1"><strong>Tahun:</strong> 2022</p>
+      <p class="mb-0">Mendalami materi HTML, CSS, dan praktik membangun website responsif. Proyek akhir saya berupa aplikasi web interaktif.</p>
+    </div>
+  
+  </section>
+  
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <h3>Artikel</h3>
+    <div class="artikel-wrapper">
+      <a href="AI Programming.html">
+      <div class="artikel-item">
+        <img src="img/artikel1.jpeg" alt="AI Programming" class="artikel-img">
+        <div class="artikel-text" >
+          <h4>Peran AI dalam Pemrograman </h4>
+          <p>AI memungkinkan otomatisasi dan efisiensi dalam penulisan kode.</p>
+        </div>
+      </div>
+      </a>
+      <a href="Belajar_Programming.html">
+      <div class="artikel-item hidden">
+        <img src="img/artikel2.jpeg" alt="Belajar Programming" class="artikel-img">
+        <div class="artikel-text">
+          <h4>Pengenalan Programming</h4>
+          <p>Programming mencakup penulisan, pengujian, dan eksekusi kode.</p>
+        </div>
+      </div>
+      </a>
+      <a href="Top_Bahasa_2025.html">
+      <div class="artikel-item hidden">
+        <img src="img/artikel3.jpeg" alt="Top Bahasa 2025" class="artikel-img">
+        <div class="artikel-text">
+          <h4>Top 5 Bahasa Pemrograman 2025</h4>
+          <p>Bahasa seperti Python, JavaScript, dan Go tetap populer.</p>
+        </div>
+      </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Produk Section -->
+  <section id="produk">
+    <h3>Produk Unggulan</h3>
+    <div class="row">
+      <a href="Code Editor.html">
+      <div class="col-md-4 produk-item">
+        <img src="img/product1.jpg" alt="Code Editor" class="produk-img">
+        <h5>Code Editor</h5>
+        <p>Lightweight editor with real-time debugging.</p>
+      </div>
+      </a>
+      <a href="Website Builder.html">
+      <div class="col-md-4 produk-item hidden">
+        <img src="img/product2.jpeg" alt="Website Builder" class="produk-img">
+        <h5>Website Builder</h5>
+        <p>Build websites without coding knowledge.</p>
+      </div>
+      </a>
+      <a href="No-Code App Creator.html">
+      <div class="col-md-4 produk-item hidden">
+        <img src="img/product3.jpeg" alt="No-Code App Creator" class="produk-img">
+        <h5>No-Code App Creator</h5>
+        <p>Create mobile apps with a drag-and-drop interface.</p>
+      </div>
+      </a>
+    </div>
+  </section>
+
+ <!-- Sertifikat Section -->
+<section id="sertifikat">
+  <div class="container">
+    <h3>Sertifikat Saya</h3>
+    <p>Saya terus meningkatkan keterampilan saya melalui berbagai kursus dan sertifikasi profesional. Berikut adalah beberapa sertifikat yang saya miliki:</p>
+
+    <div class="certificate-item">
+      <h5>Pelatihan Cordova: Pengembangan Web dengan HTML & CSS - Udemy</h5>
+      <p><strong> September 2023</strong></p>
+      <p>Sertifikat ini mengonfirmasi keahlian saya dalam pengembangan aplikasi menggunakan Cordova, serta pemahaman mendalam tentang HTML dan CSS untuk membangun antarmuka web yang responsif dan menarik.</p>
+    </div>
+</section>
+
+
+  <div class="footer">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#welcome" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#blog" class="nav-link px-2 text-body-secondary">Blog</a></li>
+        <li class="nav-item"><a href="#produk" class="nav-link px-2 text-body-secondary">Product</a></li>
+        <li class="nav-item"><a href="#tentang" class="nav-link px-2 text-body-secondary">About Me</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link px-2 text-body-secondary">Education</a></li>
+        <li class="nav-item"><a href="#sertifikat" class="nav-link px-2 text-body-secondary">Sertifikat</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">&copy; 2025 Company, Inc</p>
+    </footer>
+  </div>
+  
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+  
+      hamburger.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+      });
+    });
+  </script>
+
+  
+
+</body>
+</html>
